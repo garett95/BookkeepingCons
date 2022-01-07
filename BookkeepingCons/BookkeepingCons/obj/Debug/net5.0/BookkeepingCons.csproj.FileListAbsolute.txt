@@ -1,0 +1,16 @@
+C:\Users\Fedor Andreevich\Desktop\git\BookkeepingCons\BookkeepingCons\BookkeepingCons\BookkeepingCons\bin\Debug\net5.0\BookkeepingCons.exe
+C:\Users\Fedor Andreevich\Desktop\git\BookkeepingCons\BookkeepingCons\BookkeepingCons\BookkeepingCons\bin\Debug\net5.0\BookkeepingCons.deps.json
+C:\Users\Fedor Andreevich\Desktop\git\BookkeepingCons\BookkeepingCons\BookkeepingCons\BookkeepingCons\bin\Debug\net5.0\BookkeepingCons.runtimeconfig.json
+C:\Users\Fedor Andreevich\Desktop\git\BookkeepingCons\BookkeepingCons\BookkeepingCons\BookkeepingCons\bin\Debug\net5.0\BookkeepingCons.runtimeconfig.dev.json
+C:\Users\Fedor Andreevich\Desktop\git\BookkeepingCons\BookkeepingCons\BookkeepingCons\BookkeepingCons\bin\Debug\net5.0\BookkeepingCons.dll
+C:\Users\Fedor Andreevich\Desktop\git\BookkeepingCons\BookkeepingCons\BookkeepingCons\BookkeepingCons\bin\Debug\net5.0\ref\BookkeepingCons.dll
+C:\Users\Fedor Andreevich\Desktop\git\BookkeepingCons\BookkeepingCons\BookkeepingCons\BookkeepingCons\bin\Debug\net5.0\BookkeepingCons.pdb
+C:\Users\Fedor Andreevich\Desktop\git\BookkeepingCons\BookkeepingCons\BookkeepingCons\BookkeepingCons\obj\Debug\net5.0\BookkeepingCons.csproj.AssemblyReference.cache
+C:\Users\Fedor Andreevich\Desktop\git\BookkeepingCons\BookkeepingCons\BookkeepingCons\BookkeepingCons\obj\Debug\net5.0\BookkeepingCons.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fedor Andreevich\Desktop\git\BookkeepingCons\BookkeepingCons\BookkeepingCons\BookkeepingCons\obj\Debug\net5.0\BookkeepingCons.AssemblyInfoInputs.cache
+C:\Users\Fedor Andreevich\Desktop\git\BookkeepingCons\BookkeepingCons\BookkeepingCons\BookkeepingCons\obj\Debug\net5.0\BookkeepingCons.AssemblyInfo.cs
+C:\Users\Fedor Andreevich\Desktop\git\BookkeepingCons\BookkeepingCons\BookkeepingCons\BookkeepingCons\obj\Debug\net5.0\BookkeepingCons.csproj.CoreCompileInputs.cache
+C:\Users\Fedor Andreevich\Desktop\git\BookkeepingCons\BookkeepingCons\BookkeepingCons\BookkeepingCons\obj\Debug\net5.0\BookkeepingCons.dll
+C:\Users\Fedor Andreevich\Desktop\git\BookkeepingCons\BookkeepingCons\BookkeepingCons\BookkeepingCons\obj\Debug\net5.0\ref\BookkeepingCons.dll
+C:\Users\Fedor Andreevich\Desktop\git\BookkeepingCons\BookkeepingCons\BookkeepingCons\BookkeepingCons\obj\Debug\net5.0\BookkeepingCons.pdb
+C:\Users\Fedor Andreevich\Desktop\git\BookkeepingCons\BookkeepingCons\BookkeepingCons\BookkeepingCons\obj\Debug\net5.0\BookkeepingCons.genruntimeconfig.cache
