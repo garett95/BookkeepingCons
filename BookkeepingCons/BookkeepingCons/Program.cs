@@ -14,61 +14,25 @@ namespace BookkeepingCons
         public static int SpendingYear { get; set; } /*расход за год*/
         static void Main(string[] args)
         {
-            //string[] report = new string[5];
-            //for (int i = 1; i < 4; i++)
-            //{
-            //    string path = $"C:\\Users\\Fedor Andreevich\\Desktop\\ref\\m.20210{i}.csv";
-            //    TextFromFile = FileReader(path);
-            //    DataFromFile = TextToWords(TextFromFile);
-            //    report = MonflyReport.MonthReport(DataFromFile, i);
-            //    for (int j = 0; j < report.Length; j++)
-            //    {
-            //        Console.WriteLine($" {report[j]}");
-            //    }
-            //}
+            
+            for (int i = 1; i < 4; i++)
+            {
+                string path = $"C:\\Users\\Fedor Andreevich\\Desktop\\ref\\m.20210{i}.csv";
+                TextFromFile = Scaner.FileReader(path);
+                DataFromFile = Scaner.TextToWords(TextFromFile);
+                MonthReportsValue monthReportsValue = new MonthReportsValue();
+                monthReportsValue = MonflyReport.MonthReport(DataFromFile, i);
+                monthReportsValue.PrintMonthReport();
+            }
+
             string path1 = $"C:\\Users\\Fedor Andreevich\\Desktop\\ref\\y.2021.csv";
-            TextFromFile = FileReader(path1);
-            DataFromFile = TextToWords(TextFromFile);
-            ReportsValue reportsValue = new ReportsValue();
-            reportsValue = YearlyReport.YearReport(DataFromFile);
-            //for (int j = 0; j < report.Length; j++)
-            //{
-            //    Console.WriteLine($" {report[j]}");
-            //}
-            Console.WriteLine(reportsValue.YearName);
-            Console.WriteLine(reportsValue.AvgIncomeMonth);
-            Console.WriteLine(reportsValue.AvgSpendingMonth);
-            foreach (var item in reportsValue.ProfitMonth)
-            {
-                Console.WriteLine(item);
-            }
-
-
+            TextFromFile = Scaner.FileReader(path1);
+            DataFromFile = Scaner.TextToWords(TextFromFile);
+            string name = Path.GetFileNameWithoutExtension(path1);
+            name = name.Substring(2);
+            YearReportsValue yearReportsValue = new YearReportsValue();
+            yearReportsValue = YearlyReport.YearReport(DataFromFile,name);
+            yearReportsValue.PrintYearReport();
         }
-        public static string FileReader(string path)
-        {
-            using (FileStream fstream = File.OpenRead(path))
-            {
-                // преобразуем строку в байты
-                byte[] array = new byte[fstream.Length];
-                // считываем данные
-                fstream.Read(array, 0, array.Length);
-                // декодируем байты в строку
-                string textFromFile = System.Text.Encoding.Default.GetString(array);
-                //Console.WriteLine($"Текст из файла: {textFromFile}");
-                //TextFromFile = textFromFile;
-                return textFromFile;
-            }
-        }
-        public static string[] TextToWords(string textFromFile)
-        {
-            string[] strings = textFromFile.Split(new char[] { '\n', '\r' });
-            var stringsList = strings.ToList();
-            stringsList.RemoveAt(0);
-            string words = string.Join(",", stringsList.ToArray());
-            return words.Split(new char[] {','});
-        }
-        
-
     }
 }

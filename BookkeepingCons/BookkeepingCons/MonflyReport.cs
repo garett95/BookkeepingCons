@@ -9,7 +9,7 @@ namespace BookkeepingCons
     class MonflyReport
     {
 
-        public static string[] MonthReport(string[] dataFromFile, int monthNumber)
+        public static MonthReportsValue MonthReport(string[] dataFromFile, int monthNumber)
         {
             int spendingMonth = 0; /*траты за месяц*/
             int sumSpendingMonth = 0; /*сумма трат замесяц*/
@@ -43,12 +43,12 @@ namespace BookkeepingCons
                     sumIncomeMonth += incomeMonth;
                 }
             }
-            return new string[] {
+            return new MonthReportsValue (
                 monthName,
                 itemSpendingName,
-                maxMonthSpending.ToString(),
+                maxMonthSpending,
                 itemIncomeName,
-                maxIncomeMonth.ToString()};
+                maxIncomeMonth);
         }
         public static string MonthName(int monthNumber)
         {

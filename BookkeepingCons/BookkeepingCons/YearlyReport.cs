@@ -8,9 +8,9 @@ namespace BookkeepingCons
 {
     class YearlyReport
     {
-        public static ReportsValue YearReport(string[] dataFromFile)
+        public static YearReportsValue YearReport(string[] dataFromFile, string name)
         {
-            int yearName = 0;
+            string yearName = name;
             //int profitMonth = 0;
             int avgSpendingMonth = 0;
             int avgIncomeMonth = 0;
@@ -42,7 +42,7 @@ namespace BookkeepingCons
 
             avgIncomeMonth = sumIncomeYear / dataFromFile.Length * 6;
             avgSpendingMonth = sumSpendingYear / dataFromFile.Length * 6;
-            return new ReportsValue (
+            return new YearReportsValue (
                 yearName,
                 avgSpendingMonth,
                 avgIncomeMonth,
