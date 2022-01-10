@@ -48,7 +48,9 @@ namespace BookkeepingCons
                 itemSpendingName,
                 maxMonthSpending,
                 itemIncomeName,
-                maxIncomeMonth);
+                maxIncomeMonth,
+                sumIncomeMonth,
+                sumSpendingMonth);
         }
         public static string MonthName(int monthNumber)
         {

@@ -46,7 +46,9 @@ namespace BookkeepingCons
                 yearName,
                 avgSpendingMonth,
                 avgIncomeMonth,
-                profitMonth);
+                profitMonth, 
+                sumSpendingYear, 
+                sumIncomeYear);
         }
     }
 }

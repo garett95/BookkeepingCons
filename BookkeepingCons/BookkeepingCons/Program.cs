@@ -14,15 +14,18 @@ namespace BookkeepingCons
         public static int SpendingYear { get; set; } /*расход за год*/
         static void Main(string[] args)
         {
-            
+            MonthReportsValue monthReportsValue = new MonthReportsValue();
+            int sumSpendingYear = 0;
+            int sumIncomeYear = 0;
             for (int i = 1; i < 4; i++)
             {
                 string path = $"C:\\Users\\Fedor Andreevich\\Desktop\\ref\\m.20210{i}.csv";
                 TextFromFile = Scaner.FileReader(path);
                 DataFromFile = Scaner.TextToWords(TextFromFile);
-                MonthReportsValue monthReportsValue = new MonthReportsValue();
                 monthReportsValue = MonflyReport.MonthReport(DataFromFile, i);
                 monthReportsValue.PrintMonthReport();
+                sumSpendingYear += monthReportsValue.SumSpendingMonth;
+                sumIncomeYear += monthReportsValue.SumIncomeMonth;
             }
 
             string path1 = $"C:\\Users\\Fedor Andreevich\\Desktop\\ref\\y.2021.csv";
@@ -33,6 +36,15 @@ namespace BookkeepingCons
             YearReportsValue yearReportsValue = new YearReportsValue();
             yearReportsValue = YearlyReport.YearReport(DataFromFile,name);
             yearReportsValue.PrintYearReport();
+            Console.WriteLine(ExaminationMonthYear(yearReportsValue, sumSpendingYear, sumIncomeYear));
+        }
+        public static bool ExaminationMonthYear(
+            YearReportsValue yearReportsValue, 
+            int sumSpendingYear, 
+            int sumIncomeYear)
+        {
+            return yearReportsValue.SumSpendingYear == sumSpendingYear &&
+                yearReportsValue.SumIncomeYear == sumIncomeYear;
         }
     }
 }

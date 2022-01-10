@@ -13,14 +13,17 @@ namespace BookkeepingCons
             string itemSpendingName,
             int maxMonthSpending,
             string itemIncomeName,
-            int maxIncomeMonth)
+            int maxIncomeMonth,
+            int sumIncomeMonth,
+            int sumSpendingMonth)
         {
             MonthName = monthName;
             ItemSpendingName = itemSpendingName;
             MaxMonthSpending = maxMonthSpending;
             ItemIncomeName = itemIncomeName;
             MaxIncomeMonth = maxIncomeMonth;
-
+            SumIncomeMonth = sumIncomeMonth;
+            SumSpendingMonth = sumSpendingMonth;
         }
         public MonthReportsValue () {}
         public string MonthName {get;set;}
@@ -28,6 +31,8 @@ namespace BookkeepingCons
         public int MaxMonthSpending { get; set; }
         public string ItemIncomeName { get; set; }
         public int MaxIncomeMonth { get; set; }
+        public int SumIncomeMonth { get; set; }
+        public int SumSpendingMonth { get; set; }
         public void PrintMonthReport()
         {
             Console.WriteLine($"Название месяца:{MonthName}");

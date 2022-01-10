@@ -12,17 +12,23 @@ namespace BookkeepingCons
             string yearName,
             int avgSpendingMonth,
             int avgIncomeMonth,
-            List<int> profitMonth)
+            List<int> profitMonth,
+            int sumSpendingYear,
+            int sumIncomeYear)
         {
             YearName = yearName;
             AvgSpendingMonth = avgSpendingMonth;
             AvgIncomeMonth = avgIncomeMonth;
             ProfitMonth = profitMonth;
+            SumSpendingYear = sumSpendingYear;
+            SumIncomeYear = sumIncomeYear;
         }
         public YearReportsValue() { }
         public string YearName { get; set; }
         public int AvgSpendingMonth { get; set; }
         public int AvgIncomeMonth { get; set; }
+        public int SumSpendingYear { get; set; }
+        public int SumIncomeYear { get; set; }
         public List<int> ProfitMonth { get; set; }
         public  void PrintYearReport()
         {
