@@ -11,7 +11,6 @@ namespace BookkeepingCons
         public static YearReportsValue YearReport(string[] dataFromFile, string name)
         {
             string yearName = name;
-            //int profitMonth = 0;
             int avgSpendingMonth = 0;
             int avgIncomeMonth = 0;
             int sumSpendingYear = 0;
